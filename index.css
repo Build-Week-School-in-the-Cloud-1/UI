@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -89,6 +88,7 @@ header {
     display: inline-block;
     font-size: 16px;
     margin: 2em;
+    outline: none;
 }
 #signin:hover{
     background-color: white; 
@@ -123,8 +123,8 @@ img{
 }
 h1{
     font-family: 'Italianno', cursive;
-    font: bold;
     font-size: 5em;
+    font-weight: 300;
     width: 100%;
 }
 #divtext1{
@@ -147,6 +147,7 @@ h1{
     display: inline-block;
     font-size: 12px;
     border-radius: 15px;
+    outline: none;
 }
 #memberbutton:hover{
     background-color: white;
@@ -163,6 +164,7 @@ h1{
     display: inline-block;
     font-size: 12px;
     border-radius: 15px;
+    outline: none;
 }
 #morebutton:hover{
     background-color: #83C8E4;
@@ -185,9 +187,11 @@ h1{
   }
   .specialtextcontainer{
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
+    width: 80%;
+    padding-left: 7.5%;
     text-align: center;
-    margin: 10em 0 2em 0;
+    margin: 2em;
+    font-size: 1.5em;
   }
   .bodyicon{
     font-size: 4em;
@@ -225,8 +229,22 @@ h1{
   h3{
     text-align: center;
     font-family: 'Open Sans Bold', sans-serif;
+    margin: 1em 0;
   }
   footer{
     background-color: #83C8E4;
     height: 5em;
+  }
+  .description{
+    font-family: 'Open Sans', sans-serif;
+    width: 70%;
+    text-align: justify;
+    padding-left: 15%;
+
+  }
+  .smallcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
   }
