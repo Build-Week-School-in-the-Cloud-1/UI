@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=================================================================================================================*/
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header {
+    background-color: #83C8E4;
+    margin: 0em;
+    border: 0em;
+    padding: 0em;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+}
+#divtitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+#divbutton{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+#title {
+    color: white;
+    font-size: 1.5em;
+    align-self: flex-start;
+    padding: 15px 32px;
+    margin: .5em;
+}
+#signin {
+    background-color: #83C8E4; 
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2em;
+    outline: none;
+}
+#signin:hover{
+    background-color: white; 
+    border: 1px solid white;
+    color: #83C8E4;  
+    height: 50%;  
+}
+#divimg{
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+img{
+    object-fit: cover;
+    /* width: 100%; */
+    overflow: hidden;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font: 700;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em 0;
+}
+#maintext{
+    font-family: 'Open Sans', sans-serif;
+    font: 300;
+    font-size: 1em;
+    text-align: justify;
+    margin: 1em 0;
+    width: 80%;
+    padding-left: 10%;
+}
+#bigcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20%;
+
+}
+#bigcontainer2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.profilecontainer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#profile_pic{
+    width: 50%;
+    align-self: center;
+}
+#profile_pic2{
+    width: 40%;
+    align-self: center;
+}
+h2{
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font: 700;
+    font-size: 1.3em;
+    margin: 1em;
+}
+#profiletext{
+    align-self: center;
+}
+
+
+
+
+
+
+footer{
+  background-color: #83C8E4;
+  height: 5em;
+}
