@@ -38,7 +38,7 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+  border-spacing: 0;
 }
 
 /*=================================================================================================================*/
@@ -47,6 +47,10 @@ body{
     flex-direction: column;
     width: 100%;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
 header {
     background-color: #83C8E4;
     margin: 0em;
@@ -118,7 +122,6 @@ img{
 }
 #slogan{
     height: 30em;
-   
     margin: 1em;
 }
 h1{
@@ -183,7 +186,7 @@ h1{
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     text-align: center;
-    margin: 2em;
+    margin: 2em 0;
   }
   .specialtextcontainer{
     font-family: 'Open Sans', sans-serif;
@@ -200,6 +203,11 @@ h1{
     margin: 0.5em 0;
   }
   #benefits{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+  }
+  #howbenefits{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2em;
@@ -248,3 +256,48 @@ h1{
     width: 33%;
     justify-content: center;
   }
+
+  /*=================================================================================================================*/
+
+  @media(max-width:800px){
+   #intro{
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 100%;
+   }
+   #container1{
+     width: 90%;
+   }
+   #slogan{
+     width: 100%;
+     height: 100%;
+   }
+   #divimg{
+     width: 96%;
+    display: flex;
+   }
+   #student_with_computer{
+    width: 75%;
+    height: 75%;
+    align-self: center;
+   }
+   .specialtextcontainer{
+    padding-left: 2.5%;
+  }
+  #howbenefits{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media(max-width:500px){
+  h1{
+    font-size: 3em;
+  }
+  #benefits{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .smallcontainer{
+    width: 100%;
+  }
+}
