@@ -47,6 +47,9 @@ body{
     flex-direction: column;
     width: 100%;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 header {
     background-color: #83C8E4;
     margin: 0em;
@@ -152,18 +155,27 @@ h2{
     font-family: 'Open Sans', sans-serif;
     font: 700;
     font-size: 1.3em;
-    margin: 1em;
+    margin-top: 1em;
 }
 #profiletext{
     align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font: 300;
+    margin-bottom: 1em;
 }
-
-
-
-
-
-
 footer{
   background-color: #83C8E4;
   height: 5em;
+}
+@media(max-width:800px){
+    #bigcontainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    .profilecontainer{
+        align-self: center;
+    }
 }
